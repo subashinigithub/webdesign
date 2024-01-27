@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+
+
+
+
+</head>
+ <style>
+  #head .container-fluid{
+   
+   background-color: grey;
+   box-shadow: 5px 5px 20px rgb(0,0,0,0.5);
+   }
+
+   .navbar{
+       border: 2px gray;
+       position: sticky;
+       width: 100%;
+       
+   }
+   .navbar-brand img{
+       border-radius: 50px;
+   }
+   .nav-item{
+   margin-left: 10px;
+   padding: 15px;
+   text-align: center;
+   }
+   .nav-item a{
+       margin-left: 20px;
+       color:white;
+       border-bottom: 2px solid transparent;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   .nav-item a:hover{
+       background-color: crimson;
+       }
+       .navbar-brand{
+           padding:10px;
+           font-size: 25px;
+           font-weight: 800;
+           } 
+           
+       .fixed-top{
+           
+           border: 2px solid grey;
+           
+       
+           background-color: aliceblue;
+           box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+       }
+       .fixed-top img{
+           max-width: 100%;
+           height: auto;
+           display: block;
+           margin: 0 auto;
+       }
+       .d-flex{
+           margin-left: 500px;
+           margin-top: 10px;
+       }
+       
+   .d-flex input{
+       width: 100%;
+   }
+   .d-flex button{
+       height: 38px;
+       background-color: green;
+       color: black;
+   }
+
+
+
+    .center{
+        text-align: center;
+        margin-top: 150px;
+        color:tomato;
+        }
+        #products h1{
+          color:black;
+          text-shadow: 20px 20px 20px grey;
+        text-align: center;
+        font-size: 50px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    #para img{
+       width: 290px;
+       height: 200px;
+    }
+    
+    .card{
+      border: none !important;
+      margin: 10px 20px;
+      margin-left: 40px;
+      border-radius: 20px 60px;
+      align-items: center;
+      overflow: hidden;
+      justify-content: center;
+      box-shadow: 15px 20px 20px rgba(0,0,0,.3);
+                  inset:4px 4px 10px white;
+
+    }
+    .card:hover{
+      box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+                  inset: 4px 4px 10px white;
+                  transition:-2s;
+    }
+    #para .container-fluid{
+      background: url('./food2.jpeg');
+      background-size: cover;
+      
+    }
+
+    .color{
+      background-color: rgba(255, 255, 255, 0.623);
+      width: 100vw;
+    }
+
+    #footer{
+    margin-top: 60px;
+    background-color:#343a40;
+    color: white;
+    height: 250px;
+}
+#footer h4{
+    margin-left: 40px;
+    margin-top: 40px;
+    color: black;
+    text-shadow: 0px 5px 6px#6c757d;
+}
+#footer p{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+#last{
+    background-color: black;
+    margin-top: -5px;
+    height: 120px;
+    
+}
+#last i{
+    
+    margin-top: 15px;
+    
+    color: white;
+    width: 6px;
+    margin-left: 40px;
+}
+#last i:hover{
+    color: blue;
+    
+    transform: scale(1.1);
+}
+
+#last p{
+   
+    font-size: 20px;
+   margin-top: 30px;
+    color: white;
+    
+}
+#last p:hover{
+    background-color:green;
+}
+#icons i:hover{
+transform: scale(1.4);
+}
+.icon{
+    gap: 40px;
+    padding: 20px 30px 40px 20px;
+}
+#last .row{
+    gap: 60px;
+    padding:30px;
+    display: flex;
+}
+
+
+
+  
+    
+    
+        
+
+</style> 
+<body>
+  <section id="head">
+  <div class="fixed-top">
+    <div class="navbar">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=""><img src="./img2.jpg" height="100px" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./product.html">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./order.html">Order</a>
+        </li>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><a href="#card">search</a></button>
+          </form>
+
+      </div>
+      </div>
+
+      </nav>
+      </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- productpage -->
+    <div class="center"><h3>FOOD GALLERY</h3></div>
+    <section id="products">
+        <h1>WELCOME TO OUR RESTAURANT</h1>
+        <p><marquee><b>It's Not Just a food It's an Experience.....!!!</b></marquee></p>
+      </section>
+
+      <section id="para">
+        <div class="container-fluid" style="background-color: rgb(247, 2, 2);">
+          <div class="color">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./pastha.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Food1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div><b>$120</b></div>
+                          <a href="#" class="btn btn-primary">Order-Now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./pastha.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Food1</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <div><b>$120</b></div>
+                              <a href="#" class="btn btn-primary">Order-Now</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Food1</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <div><b>$120</b></div>
+                                  <a href="#" class="btn btn-primary">Order-Now</a>
+                                </div>
+                              </div>
+                            </div>
+
+                           
+            </div>
+            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Food1</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <div><b>$120</b></div>
+                                          <a href="#" class="btn btn-primary">Order-Now</a>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                      <div class="card" style="width: 18rem;">
+                                          <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Food1</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div><b>$120</b></div>
+                                            <a href="#" class="btn btn-primary">Order-Now</a>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-sm-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Food1</h5>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <div><b>$120</b></div>
+                                              <a href="#" class="btn btn-primary">Order-Now</a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                     </div>
+
+                          <div class="row">
+                                      <div class="col-sm-4">
+                                          <div class="card" style="width: 18rem;">
+                                              <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Food1</h5>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                <div><b>$120</b></div>
+                                                <a href="#" class="btn btn-primary">Order-Now</a>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-sm-4">
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Food1</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <div><b>$120</b></div>
+                                                  <a href="#" class="btn btn-primary">Order-Now</a>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                              <div class="card" style="width: 18rem;">
+                                                  <img src="./pastha.jpg" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">Food1</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    <div><b>$120</b></div>
+                                                    <a href="#" class="btn btn-primary">Order-Now</a>
+                                                  </div>
+                                                </div>
+                                              </div>   
+                                          </div>
+                                        </div>
+
+
+                                        </div>
+                                    </section>
+                                    <!-- footer -->
+
+                                    <section id="footer">
+                                      <div class="container-fluid">
+                                        <div class="row">
+                                          <div class="col-sm-3">
+                                            <h4>About Us</h4>
+                                            <p>Fries<br>
+                                              Desserts<br>
+                                              Drinks<br>
+                                            </p> 
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <h4>Facility</h4>
+                                            <p>Frequent Order<br>
+                                              Easy-Buy<br>
+                                              Door-Delivery<br>
+                                            </p> 
+                                          </div>
+                                    
+                                          <div class="col-sm-3">
+                                            <h4>Contact</h4>
+                                            <p><i class="fa-regular fa-envelope"></i>    Email:nawagrand@gmail.com<br>
+                                              <i class="fa-solid fa-phone"></i> Phone:9787599607<br>
+                                              <i class="fa-brands fa-whatsapp"></i> Whatsapp<br>
+                                            </p> 
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <h4>Address</h4>
+                                            <p><i class="fa-solid fa-location-dot"></i> 222,South Street<br>
+                                              Mayiladuthurai<br>
+                                              609001<br>
+                                            </p> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </section>
+                                    
+                                    
+                                    <section id="last">
+                                      <div class="container-fluid">
+                                        <div class="row">
+                                          
+                                          <div class="col-sm-6">
+                                            <i class="fa-brands fa-whatsapp fa-xl "></i>
+                                            <i class="fa-brands fa-facebook fa-xl "></i>
+                                            <i class="fa-brands fa-x-twitter fa-xl "></i>
+                                            <i class="fa-brands fa-instagram fa-xl "></i>
+                                            <i class="fa-brands fa-github fa-xl"></i>
+                                          
+                                          
+                                           
+                                            <p>@Copyrights with Isaac|2023 All Right Reserved</p>
+                                           </div>
+                                        </div>
+                                      </div>
+                                    
+                                    </section>
+                                    
+                        
+
+
+
+
+
+    
+</body>
+</html>
